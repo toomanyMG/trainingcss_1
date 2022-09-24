@@ -1,7 +1,47 @@
-:root {}
+:root {
+    --primary-color: red;
+    --secondary-color: #eab286;
 
-body {
+    --font-family: 'Impact';
+    --font-size: 20px;
+}
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+
+}
+
+nav {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%%;
+    height: auto;
+}
+
+nav h1 {
+    color: var(--secondary-color);
+    padding-block: .5em;
+    padding-inline: .5em;
+    font-weight: bold;
+}
+
+nav ul {
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1em;
+    padding-inline: 1em;
+    margin-block-end: .5em;
+    list-style: none;
 }
