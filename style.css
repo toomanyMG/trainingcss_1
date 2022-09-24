@@ -1,0 +1,118 @@
+:root {
+    --primary-color: red;
+    --secondary-color: #eab286;
+
+    --font-family: 'Impact';
+    --font-size: 20px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+
+}
+
+nav {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+nav h1 {
+    color: var(--secondary-color);
+    padding-block: .5em;
+    padding-inline: .5em;
+    font-weight: bold;
+}
+
+nav ul {
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1em;
+    padding-inline: 1em;
+    margin-block-end: .5em;
+    list-style: none;
+}
+
+header {
+    background-image: url("https://loremflickr.com/cache/resized/65535_52180198759_1d16eb229e_h_1200_300_nofilter.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+    margin-block-end: 4rem;
+}
+
+header h1 {
+    color: var(--secondary-color);
+    text-shadow: 1px 1px 1px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+}
+
+main {
+    margin-inline: 2rem;
+    line-height: 1.5;
+    max-width: 65ch;
+}
+
+.articleMain {
+    margin-block-end: 4em;
+}
+
+.articleMain h2 {
+    padding-block-end: 1em;
+}
+
+.otherArticle {
+    margin-block-end: 4em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px
+}
+
+.otherArticle article {
+    box-shadow: 2px 2px 2px black;
+    border-radius: 2px;
+    height: 5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.gelement-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+
+
+
+
+footer {
+    --font-size: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: var(--font-size);
+    opacity: .3;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
