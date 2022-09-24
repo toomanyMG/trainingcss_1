@@ -68,3 +68,26 @@ main {
     line-height: 1.5;
     max-width: 65ch;
 }
+
+.articleMain {
+    margin-block-end: 4em;
+}
+
+.articleMain h2 {
+    padding-block-end: 1em;
+}
+
+
+
+footer {
+    --font-size: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: var(--font-size);
+    opacity: .3;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
