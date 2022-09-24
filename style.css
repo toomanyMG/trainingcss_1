@@ -77,6 +77,31 @@ main {
     padding-block-end: 1em;
 }
 
+.otherArticle {
+    margin-block-end: 4em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px
+}
+
+.otherArticle article {
+    box-shadow: 2px 2px 2px black;
+    border-radius: 2px;
+    height: 5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.gelement-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+
+
 
 
 footer {
