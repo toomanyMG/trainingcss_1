@@ -24,7 +24,7 @@ nav {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 100%%;
+    width: 100%;
     height: auto;
 }
 
@@ -44,4 +44,27 @@ nav ul {
     padding-inline: 1em;
     margin-block-end: .5em;
     list-style: none;
+}
+
+header {
+    background-image: url("https://loremflickr.com/cache/resized/65535_52180198759_1d16eb229e_h_1200_300_nofilter.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+    margin-block-end: 4rem;
+}
+
+header h1 {
+    color: var(--secondary-color);
+    text-shadow: 1px 1px 1px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+}
+
+main {
+    margin-inline: 2rem;
+    line-height: 1.5;
+    max-width: 65ch;
 }
